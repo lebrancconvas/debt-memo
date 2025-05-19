@@ -1,0 +1,17 @@
+.add-debt-button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: 3px 5px 11px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.add-debt-button:hover {
+  background-color: #9ffe8e;
+  transition: background-color 0.3s ease;
+}
+
+.add-debt-button:active {
+  transform: scale(0.98);
+}

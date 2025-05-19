@@ -1,24 +1,29 @@
-import "./index.css";
-import { APITester } from "./APITester";
+import Action from "@/components/Action";
+import Form from "@/components/Form";
+import List from "@/components/List";
 
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
+import "@/styles/index.css";
 
 export function App() {
+
   return (
-    <div className="app">
-      <div className="logo-container">
-        <img src={logo} alt="Bun Logo" className="logo bun-logo" />
-        <img src={reactLogo} alt="React Logo" className="logo react-logo" />
-      </div>
+    <>
+      <header>
+        <h1>Debt Memo</h1>
+      </header>
+      <section id="action">
+        <Action />
+      </section>
+      <section id="form">
+        <Form />
+      </section>
+      <section id="list">
+        <List />
+      </section>
+      <footer>
+        <p>Made by <a href="https://github.com/lebrancconvas" target="_blank">Poom Yimyuean (@lebrancconvas)</a> in 2025</p>
+      </footer>
+    </>
+  )
+};
 
-      <h1>Bun + React</h1>
-      <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
-      </p>
-      <APITester />
-    </div>
-  );
-}
-
-export default App;
